@@ -2,15 +2,45 @@ import React, { Component } from 'react';
 import './styles/css/styles.css';
 import './App.css';
 
+const NAV_TOP_LINKS = [
+    {name: 'lien 1', URL: '#'},
+    {name: 'lien 2', URL: '#'},
+    {name: 'lien 3', URL: '#'}
+  ]
+
+const NAV_SUB_LINKS = [
+    {name: 'Chuck 01', URL: '#'},
+    {name: 'Chuck 02', URL: '#'},
+    {name: 'Chuck 03', URL: '#'},
+    {name: 'Chuck 04', URL: '#'},
+    {name: 'Chuck 05', URL: '#'}
+  ]
+
 class App extends Component {
+  renderLinks = (linksArray, delimiter) => {
+    return linksArray.map((li, liIdx) => {
+      return delimiter 
+        ? <div className="topLinksFlexDiv">
+            <li key={liIdx}><a href={li.URL}>{li.name}</a></li>&nbsp;
+            { liIdx !== linksArray.length - 1 
+              ? <div className="topLinksFlexDiv">{delimiter} &nbsp;</div>
+              : null
+            }
+          </div>
+        : <li key={liIdx}><a href={li.URL}>{li.name}</a></li>
+    });
+  }
+
   render() {
     return (
       <div className="App">
         <header>
-          <img className="chuckBackground" src="./img/ChuckBG.jpg" />
+          <img className="chuckBackground" src="./img/ChuckBG.jpg" alt="Chuckaroni"/>
           <nav className="navTop">
             <div>
-              <a href="#">lien 1</a> / <a href="#">lien 2</a> / <a href="#">lien 3</a>
+              <ul>
+                { this.renderLinks(NAV_TOP_LINKS, '/') }
+              </ul>
             </div>
           </nav>
           <img className="chuckSeal" src="./img/ChuckSeal.png" alt="Chuck's Seal of Approval" />
@@ -18,11 +48,7 @@ class App extends Component {
         <nav className="navSub">
           <div>
             <ul>
-              <li><a href="#">Chuck 01</a></li> 
-              <li><a href="#">Chuck 02</a></li> 
-              <li><a href="#">Chuck 03</a></li> 
-              <li><a href="#">Chuck 04</a></li> 
-              <li><a href="#">Chuck 05</a></li> 
+              { this.renderLinks(NAV_SUB_LINKS) }
             </ul>
           </div>
         </nav>
@@ -48,7 +74,7 @@ class App extends Component {
             <aside>
               <div>
                 <h6>Chuck is the best</h6>
-                <img src="./img/CheckDemGunzOut.jpg" />
+                <img src="./img/CheckDemGunzOut.jpg" alt="La guerre, la guerre... c'pas une raison pour se faire mal!"/>
                 <p>Proin varius neque mauris, a pretium diam tristique id. Vivamus mattis rutrum lectus, in volutpat urna ornare ut. Duis volutpat lorem ac elit feugiat, in lacinia nisl sodales. Praesent quam risus, sodales in felis vel, fringilla posuere erat. Maecenas ut accumsan enim. Nulla non rhoncus leo. Nulla lacinia pretium neque sed vulputate.</p>
               </div>
             </aside>
@@ -57,8 +83,9 @@ class App extends Component {
         <footer>
           <div>&copy; Copyright Chuck Norris 2015.</div>
           <div>
-            Suivez-nous sur&nbsp; 
-              <a href="#"><i className="fab fa-twitter-square custom-fa-1pt6"></i></a>&nbsp;<a href="#"><i className="fab fa-facebook-square custom-fa-1pt6"></i></a>
+            Suivez-nous sur
+              &nbsp;<a href="#"><i className="fab fa-twitter-square custom-fa-1pt75"></i></a>
+              &nbsp;<a href="#"><i className="fab fa-facebook-square custom-fa-1pt75"></i></a>
           </div>
         </footer>
       </div>

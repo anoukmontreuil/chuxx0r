@@ -28,13 +28,25 @@ header nav {
 }
 
 /* line 31, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+ul {
+  margin: 0.25em 0;
+  display: flex;
+  list-style-type: none;
+}
+
+/* line 36, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 39, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 main {
   display: flex;
   background-color: white;
   padding: 0 0 2em 0;
 }
 
-/* line 36, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 44, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 section {
   display: block;
   text-align: left;
@@ -42,7 +54,7 @@ section {
   margin: 0 0 -1.5em 0;
 }
 
-/* line 41, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 49, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 section h4 {
   font-size: 0.9em;
   color: #8c5b3e;
@@ -50,13 +62,13 @@ section h4 {
   margin: 0.5em 0;
 }
 
-/* line 46, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 54, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 section p {
   font-size: 0.7em;
   line-height: 1.25;
 }
 
-/* line 50, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 58, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 aside {
   display: block;
   background-color: #efefef;
@@ -66,13 +78,13 @@ aside {
   min-width: 30vw;
 }
 
-/* line 57, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 65, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 aside div {
   text-align: left;
   padding: 0.5em;
 }
 
-/* line 60, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 68, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 aside div h6 {
   text-align: left;
   text-transform: uppercase;
@@ -80,23 +92,23 @@ aside div h6 {
   margin: -0.3em 0 0.5em 0;
 }
 
-/* line 65, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 73, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 aside div img {
   max-width: 100%;
 }
 
-/* line 67, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 75, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 aside div p {
   font-size: 0.6em;
   line-height: 1.25;
 }
 
-/* line 71, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 79, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 0.6em;
   font-weight: 100;
   background-color: #c8ac6a;
@@ -105,14 +117,26 @@ footer {
   bottom: 0;
 }
 
-/* line 82, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 90, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 footer :nth-child(2) {
   text-transform: uppercase;
 }
 
+/* line 92, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+footer div {
+  display: flex;
+  align-content: center;
+  margin: 0.15em 0 0 0;
+}
+
+/* line 96, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+footer i {
+  padding: -0.15em 0 0 0;
+}
+
 /* CLASSES */
 /* Type: Images /* */
-/* line 88, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 102, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 .chuckBackground {
   width: 100vw;
   position: fixed;
@@ -121,31 +145,48 @@ footer :nth-child(2) {
   z-index: -1;
 }
 
-/* line 95, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 109, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 .chuckSeal {
   position: absolute;
   left: 0;
+  top: 5vh;
   margin: 1em 0.5em;
   min-width: 130px;
-  max-width: 15vw;
+  max-width: 10vw;
 }
 
 /* Type: NavBars */
-/* line 103, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 118, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 .navTop {
+  position: absolute;
+  top: 0;
   display: block;
   text-align: right;
+  padding: 0 1em;
   background-color: rgba(255, 255, 255, 0.35);
-  padding: 0.25em 1em;
+  width: 100%;
 }
 
-/* line 108, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 126, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 .navTop div, .navTop a {
-  font-size: 0.8em;
+  align-items: center;
+  font-size: 0.9em;
   color: black;
 }
 
-/* line 112, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 130, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+.navTop ul {
+  display: block;
+  justify-content: right;
+}
+
+/* line 134, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+.topLinksFlexDiv {
+  display: inline-flex;
+  justify-content: right;
+}
+
+/* line 138, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 .navSub {
   display: flex;
   text-transform: uppercase;
@@ -153,37 +194,35 @@ footer :nth-child(2) {
   background-color: #ac7c3a;
 }
 
-/* line 117, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 143, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 .navSub div {
   text-align: center;
   width: 60vw;
 }
 
-/* line 120, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 146, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 .navSub div ul {
   display: flex;
   justify-content: space-around;
-  list-style-type: none;
   padding: 0.5em;
   margin: auto 0;
   width: 100%;
 }
 
-/* line 127, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 152, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 .navSub div ul li {
   display: flex;
   font-size: 0.85em;
   font-weight: 700;
 }
 
-/* line 131, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 156, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 .navSub div ul li a {
   color: white;
-  text-decoration: none;
   padding: 0.25em 0.5em;
 }
 
-/* line 135, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+/* line 159, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
 .navSub div ul li :hover {
   color: black;
   background-color: rgba(255, 255, 255, 0.25);
@@ -191,10 +230,10 @@ footer :nth-child(2) {
 }
 
 /* Type: fontAwesome Custom-Sized Icons */
-/* line 141, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
-.custom-fa-1pt6 {
+/* line 165, C:/Users/anouk/Desktop/chuxx0r/src/styles/sass/styles.sass */
+.custom-fa-1pt75 {
   color: rgba(255, 255, 255, 0.55);
-  font-size: 1.6em;
+  font-size: 1.75em;
   margin: 0 0.15em;
 }
 

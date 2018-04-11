@@ -6,7 +6,7 @@ $footerColor: rgb(200, 172, 106)
 $asideBoxColor: rgb(239, 239, 239)
 $asideHeaderColor: rgb(105, 105, 105)
 $asideTextColor: rgb(68, 68, 68)
-$smallText: 0.8em
+$smallText: 0.9em
 $smallerText: 0.7em
 $smallestText: 0.6em
 
@@ -27,6 +27,14 @@ header
   max-height: 30vh
   nav
     position: static
+
+ul
+  margin: 0.25em 0
+  display: flex
+  list-style-type: none
+
+a
+  text-decoration: none
 
 main
   display: flex
@@ -72,7 +80,7 @@ footer
   display: flex
   align-items: center
   justify-content: space-between
-  color: transparentize(white, 0.45)
+  color: transparentize(white, 0.5)
   font-size: $smallestText
   font-weight: 100
   background-color: $footerColor
@@ -81,6 +89,12 @@ footer
   bottom: 0
   :nth-child(2)
     text-transform: uppercase
+  div
+    display: flex
+    align-content: center
+    margin: 0.15em 0 0 0 
+  i
+    padding: -0.15em 0 0 0
 
 /* CLASSES */
 
@@ -95,19 +109,31 @@ footer
 .chuckSeal
   position: absolute
   left: 0
+  top: 5vh
   margin: 1em 0.5em
   min-width: 130px
-  max-width: 15vw
+  max-width: 10vw
 
 /* Type: NavBars */
 .navTop
+  position: absolute
+  top: 0
   display: block
   text-align: right
+  padding: 0 1em
   background-color: $whiteOverlay
-  padding: 0.25em 1em
+  width: 100%
   div, a
+    align-items: center
     font-size: $smallText
     color: black
+  ul
+    display: block
+    justify-content: right
+
+.topLinksFlexDiv
+  display: inline-flex
+  justify-content: right
 
 .navSub
   display: flex
@@ -120,7 +146,6 @@ footer
     ul
       display: flex
       justify-content: space-around
-      list-style-type: none
       padding: 0.5em
       margin: auto 0
       width: 100%
@@ -130,7 +155,6 @@ footer
         font-weight: 700
         a
           color: white
-          text-decoration: none
           padding: 0.25em 0.5em
         :hover
           color: black
@@ -138,7 +162,7 @@ footer
           border-radius: 0.5em
   
 /* Type: fontAwesome Custom-Sized Icons */
-.custom-fa-1pt6
+.custom-fa-1pt75
   color: transparentize(white, 0.45)
-  font-size: 1.6em
+  font-size: 1.75em
   margin: 0 0.15em
