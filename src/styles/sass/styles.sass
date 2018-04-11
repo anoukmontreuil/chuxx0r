@@ -1,8 +1,128 @@
-$topNavColor: rgba(255, 255, 255, 0.2)
-$subNavColor: rgb(194, 159, 111)
+$whiteOverlay: rgba(255, 255, 255, 0.35)
+$subNavColor: rgb(172, 124, 58)
+$sectionHeaderColor: rgb(140, 91, 62)
+$footerColor: rgb(200, 172, 106)
+$asideBoxColor: rgb(239, 239, 239)
+$asideHeaderColor: rgb(105, 105, 105)
+$asideTextColor: rgb(68, 68, 68)
+$smallText: 0.8em
+$smallerText: 0.7em
+$smallestText: 0.6em
+
+/* TAGS & ELEMENTS */
+*, *::before, *::after
+  box-sizing: inherit
+
+html
+  box-sizing: border-box
+
+body
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  letter-spacing: -0.03em
+
+ul
+  display: flex
+  justify-content: space-around
+  list-style-type: none
+  padding: 0.7em
+  margin: auto 0
+  li
+    font-size: 0.85em
+    font-weight: 500
+    a
+      color: white
+      text-decoration: none
+      padding: 0.25em 0.5em
+    :hover
+      color: black
+      background-color: transparentize(white, 0.75)
+      border-radius: 0.5em
+
+header
+  height: 33vh
+  nav
+    position: static
+
+main
+  display: flex
+  background-color: white
+
+section
+  display: block
+  text-align: left
+  padding: 1em
+  h4
+    color: $sectionHeaderColor
+    text-transform: uppercase
+    margin: 0
+  p
+    font-size: $smallerText
+
+aside
+  display: block
+  background-color: $asideBoxColor
+  border-radius: 0.5em
+  padding: 0.5em
+  margin: 1em
+  min-width: 25vw
+  div
+    text-align: left
+    padding: 0.5em
+    h6
+      text-align: left
+      text-transform: uppercase
+      color: $asideHeaderColor
+      margin: -0.3em 0 0.5em 0
+    img
+      max-width: 100%
+    p
+      font-size: $smallerText
+
+footer
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: transparentize(white, 0.45)
+  font-size: 0.7em
+  font-weight: 100
+  background-color: $footerColor
+  padding: 0.75em
+  :nth-child(2)
+    text-transform: uppercase
+
+/* CLASSES */
+
+/* Type: Images /*
+.chuckBackground
+  width: 100vw
+  position: fixed
+  left: 0
+  top: -50px
+  z-index: -1
 
 .chuckSeal
-  width: 15vw;
+  display: block
+  margin: 1em 0.5em
+  width: 15vw
 
-.chuckGuns
-  width: 20vw;
+/* Type: NavBars */
+.navTop
+  display: block
+  text-align: right
+  background-color: $whiteOverlay
+  padding: 0.25em 1em
+  div, a
+    font-size: $smallText
+    color: black
+
+.navSub
+  display: flexbox
+  text-transform: uppercase
+  background-color: $subNavColor
+  div
+    width: 60vw
+  
+/* Type: fontAwesome Custom-Sized Icons */
+.custom-fa-1pt5
+  font-size: 1.5em
+  margin: 0 0.15em
