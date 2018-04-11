@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/styles.css",
+	"sources": [
+		"../sass/styles.sass"
+	],
+	"sourcesContent": [
+		"$topNavColor: rgba(255, 255, 255, 0.2);\n$subNavColor: rgb(194, 159, 111);\n\n.chuckSeal {\n  width: 15vw; }\n\n.chuckGuns {\n  width: 20vw; }\n"
+	],
+	"mappings": ";AAGA,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,IAAK;CAAG;;;AAEjB,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,IAAK;CAAG",
+	"names": []
+}
