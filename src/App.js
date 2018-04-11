@@ -20,7 +20,7 @@ class App extends Component {
   renderLinks = (linksArray, delimiter) => {
     return linksArray.map((li, liIdx) => {
       return delimiter 
-        ? <div className="topLinksFlexDiv">
+        ? <div className="topLinksFlexDiv" key={liIdx}>
             <li key={liIdx}><a href={li.URL}>{li.name}</a></li>&nbsp;
             { liIdx !== linksArray.length - 1 
               ? <div className="topLinksFlexDiv">{delimiter} &nbsp;</div>
