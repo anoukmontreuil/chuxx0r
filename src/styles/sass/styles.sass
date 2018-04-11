@@ -1,6 +1,6 @@
 $backgroundColor: rgb(41, 41, 41)
 $whiteOverlay: rgba(255, 255, 255, 0.35)
-$subNavColor: rgb(172, 124, 58)
+$navSubColor: rgb(172, 124, 58)
 $sectionHeaderColor: rgb(140, 91, 62)
 $footerColor: rgb(200, 172, 106)
 $asideBoxColor: rgb(239, 239, 239)
@@ -23,7 +23,8 @@ body
   letter-spacing: -0.03em
 
 header
-  height: 33vh
+  min-height: 25vh
+  max-height: 30vh
   nav
     position: static
 
@@ -44,14 +45,15 @@ section
     margin: 0.5em 0
   p
     font-size: $smallerText
+    line-height: 1.25
 
 aside
   display: block
   background-color: $asideBoxColor
   border-radius: 0.5em
-  padding: 0.5em
-  margin: 1em
-  min-width: 25vw
+  padding: 0.5em 0.5em 0 0.5em
+  margin: 1em 1em 0 1em
+  min-width: 30vw
   div
     text-align: left
     padding: 0.5em
@@ -63,17 +65,18 @@ aside
     img
       max-width: 100%
     p
-      font-size: $smallerText
+      font-size: $smallestText
+      line-height: 1.25
 
 footer
   display: flex
   align-items: center
   justify-content: space-between
   color: transparentize(white, 0.45)
-  font-size: 0.7em
+  font-size: $smallestText
   font-weight: 100
   background-color: $footerColor
-  padding: 0.75em
+  padding: 1em 1.25em
   position: static
   bottom: 0
   :nth-child(2)
@@ -90,9 +93,10 @@ footer
   z-index: -1
 
 .chuckSeal
-  display: block
+  position: absolute
+  left: 0
   margin: 1em 0.5em
-  min-width: 125px
+  min-width: 130px
   max-width: 15vw
 
 /* Type: NavBars */
@@ -109,7 +113,7 @@ footer
   display: flex
   text-transform: uppercase
   justify-content: center
-  background-color: $subNavColor
+  background-color: $navSubColor
   div
     text-align: center
     width: 60vw
@@ -117,10 +121,11 @@ footer
       display: flex
       justify-content: space-around
       list-style-type: none
-      padding: 0.7em
+      padding: 0.5em
       margin: auto 0
       width: 100%
       li
+        display: flex
         font-size: 0.85em
         font-weight: 700
         a
@@ -133,6 +138,7 @@ footer
           border-radius: 0.5em
   
 /* Type: fontAwesome Custom-Sized Icons */
-.custom-fa-1pt5
-  font-size: 1.5em
+.custom-fa-1pt6
+  color: transparentize(white, 0.45)
+  font-size: 1.6em
   margin: 0 0.15em

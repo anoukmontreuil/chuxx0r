@@ -13,18 +13,16 @@ class App extends Component {
               <a href="#">lien 1</a> / <a href="#">lien 2</a> / <a href="#">lien 3</a>
             </div>
           </nav>
-          <div>
-            <img className="chuckSeal" src="./img/ChuckSeal.png" alt="Chuck's Seal of Approval!" />
-          </div>
+          <img className="chuckSeal" src="./img/ChuckSeal.png" alt="Chuck's Seal of Approval" />
         </header>
         <nav className="navSub">
           <div>
             <ul>
-              <li><a href="#">Chuck&nbsp;01</a></li> 
-              <li><a href="#">Chuck&nbsp;02</a></li> 
-              <li><a href="#">Chuck&nbsp;03</a></li> 
-              <li><a href="#">Chuck&nbsp;04</a></li> 
-              <li><a href="#">Chuck&nbsp;05</a></li> 
+              <li><a href="#">Chuck 01</a></li> 
+              <li><a href="#">Chuck 02</a></li> 
+              <li><a href="#">Chuck 03</a></li> 
+              <li><a href="#">Chuck 04</a></li> 
+              <li><a href="#">Chuck 05</a></li> 
             </ul>
           </div>
         </nav>
@@ -43,7 +41,7 @@ class App extends Component {
                 <i className="far fa-star"></i> Donec in est non elit rutrum tempor cursus ac est.
               </h4>
               <p>Sed scelerisque nibh in iaculis cursus. Nam volutpat, ex non blandit rutrum, ex enim luctus leo, consectetur sollicitudin velit eros id libero. Etiam eget magna sed magna bibendum egestas varius molestie magna. Nullam eu metus non tellus maximus malesuada. Etiam nec iaculis elit, at fermentum dui. In tellus nulla, pretium eu eleifend ut, tristique sit amet sem. Duis interdum finibus dictum. Fusce dolor nisl, aliquet eget risus eu, ultrices auctor dolor. Sed sed bibendum purus, facilisis iaculis purus.</p>
-              <p>Nulla orci ex, ultrices eu vulputate vitae, fringilla ut turpis. Nullam et orci urna. Pellentesque venenatis lobortis nunc ut interdum. Aliquam accumsan dolor quis mi suscipit dictum. Aliquam sollicitudin est vitae mi posuere, nec hendrerit nisl maximus. Nullam finibus libero quis ligula luctus, quis cursus sem vehicula. Integer pharetra libero in finibus dignissim. Mauris posuere lorem ac turpis luctus, non rutrum nisi viverra. Nunc faucibus molestie magna, id commodo orci porta eget. Suspendisse lobortis sapien id tortor laoreet, vitae volutpat.</p>
+              <p>Nulla orci ex, ultrices eu vulputate vitae, fringilla ut turpis. Nullam et orci urna. Pellentesque venenatis lobortis nunc ut interdum. Aliquam accumsan dolor quis mi suscipit dictum. Aliquam sollicitudin est vitae mi posuere, nec hendrerit nisl maximus. Nullam finibus libero quis ligula luctus, quis cursus sem vehicula. Integer pharetra libero in finibus dignissim. Mauris posuere lorem ac turpis luctus, non rutrum nisi viverra. Nunc faucibus molestie magna, id commodo orci porta eget. Suspendisse lobortis sapien id tortor laoreet.</p>
             </section>
           </div>
           <div>
@@ -59,7 +57,8 @@ class App extends Component {
         <footer>
           <div>&copy; Copyright Chuck Norris 2015.</div>
           <div>
-            Suivez-nous sur <i className="fab fa-twitter-square custom-fa-1pt5"></i> <i className="fab fa-facebook-square custom-fa-1pt5"></i>
+            Suivez-nous sur&nbsp; 
+              <a href="#"><i className="fab fa-twitter-square custom-fa-1pt6"></i></a>&nbsp;<a href="#"><i className="fab fa-facebook-square custom-fa-1pt6"></i></a>
           </div>
         </footer>
       </div>
