@@ -1,3 +1,4 @@
+$backgroundColor: rgb(41, 41, 41)
 $whiteOverlay: rgba(255, 255, 255, 0.35)
 $subNavColor: rgb(172, 124, 58)
 $sectionHeaderColor: rgb(140, 91, 62)
@@ -17,26 +18,9 @@ html
   box-sizing: border-box
 
 body
+  background-color: $backgroundColor
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   letter-spacing: -0.03em
-
-ul
-  display: flex
-  justify-content: space-around
-  list-style-type: none
-  padding: 0.7em
-  margin: auto 0
-  li
-    font-size: 0.85em
-    font-weight: 500
-    a
-      color: white
-      text-decoration: none
-      padding: 0.25em 0.5em
-    :hover
-      color: black
-      background-color: transparentize(white, 0.75)
-      border-radius: 0.5em
 
 header
   height: 33vh
@@ -46,15 +30,18 @@ header
 main
   display: flex
   background-color: white
+  padding: 0 0 2em 0
 
 section
   display: block
   text-align: left
   padding: 1em
+  margin: 0 0 -1.5em 0
   h4
+    font-size: 0.9em
     color: $sectionHeaderColor
     text-transform: uppercase
-    margin: 0
+    margin: 0.5em 0
   p
     font-size: $smallerText
 
@@ -87,6 +74,8 @@ footer
   font-weight: 100
   background-color: $footerColor
   padding: 0.75em
+  position: static
+  bottom: 0
   :nth-child(2)
     text-transform: uppercase
 
@@ -97,13 +86,14 @@ footer
   width: 100vw
   position: fixed
   left: 0
-  top: -50px
+  top: 0px
   z-index: -1
 
 .chuckSeal
   display: block
   margin: 1em 0.5em
-  width: 15vw
+  min-width: 125px
+  max-width: 15vw
 
 /* Type: NavBars */
 .navTop
@@ -116,11 +106,31 @@ footer
     color: black
 
 .navSub
-  display: flexbox
+  display: flex
   text-transform: uppercase
+  justify-content: center
   background-color: $subNavColor
   div
+    text-align: center
     width: 60vw
+    ul
+      display: flex
+      justify-content: space-around
+      list-style-type: none
+      padding: 0.7em
+      margin: auto 0
+      width: 100%
+      li
+        font-size: 0.85em
+        font-weight: 700
+        a
+          color: white
+          text-decoration: none
+          padding: 0.25em 0.5em
+        :hover
+          color: black
+          background-color: transparentize(white, 0.75)
+          border-radius: 0.5em
   
 /* Type: fontAwesome Custom-Sized Icons */
 .custom-fa-1pt5

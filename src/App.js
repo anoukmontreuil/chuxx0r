@@ -16,18 +16,18 @@ class App extends Component {
           <div>
             <img className="chuckSeal" src="./img/ChuckSeal.png" alt="Chuck's Seal of Approval!" />
           </div>
-            <nav className="navSub">
-            <div>
-              <ul>
-                <li><a href="#">Chuck&nbsp;01</a></li>
-                <li><a href="#">Chuck&nbsp;02</a></li>
-                <li><a href="#">Chuck&nbsp;03</a></li>
-                <li><a href="#">Chuck&nbsp;04</a></li>
-                <li><a href="#">Chuck&nbsp;05</a></li>
-              </ul>
-            </div>
-          </nav>
         </header>
+        <nav className="navSub">
+          <div>
+            <ul>
+              <li><a href="#">Chuck&nbsp;01</a></li> 
+              <li><a href="#">Chuck&nbsp;02</a></li> 
+              <li><a href="#">Chuck&nbsp;03</a></li> 
+              <li><a href="#">Chuck&nbsp;04</a></li> 
+              <li><a href="#">Chuck&nbsp;05</a></li> 
+            </ul>
+          </div>
+        </nav>
         <main>
           <div>
             <section>
